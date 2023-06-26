@@ -1,2 +1,2 @@
-# points_collision_detection
-Simple program that draws point in a gui created in sfml and display in console when/if the point collides between them
+# Points Collision Detection
+Create a simple program that draws points on a GUI created in SFML and displays a message in the console if any of the points collide with each othe
