@@ -7,7 +7,7 @@
 #include <iostream>
 #include <vector>
 
-#define NUM_POINTS 20
+#define NUM_POINTS 50
 #define RADIUS 15.0
 
 struct Point {

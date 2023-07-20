@@ -1,2 +1,4 @@
 # Points Collision Detection
-Create a simple program that draws points on a GUI created in SFML and displays a message in the console if any of the points collide with each othe
+A simple program that draws points in a window created using SFML and displays a message in the console if any of the points collide with each other
+
+ensure to have sfml library installed other wise the program can´t work 
