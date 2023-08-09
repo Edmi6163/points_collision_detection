@@ -3,7 +3,10 @@ simulation:
 	g++ src/main.cc src/Point.cc -o simulation -lsfml-graphics -lsfml-window -lsfml-system
 
 run:
-	./simulation
+	./simulation 
 
 clean:
-	rm simulation
+	rm simulation log.log
+
+debug:
+	./simulation >> log.log
