@@ -1,15 +1,15 @@
 #include "Point.hpp"
 
 int main() {
-  // Set the size of the 2D space
+  // window size setting
   double width = 800.0;
   double height = 600.0;
 
-  // Number of points and collision radius
 
   // Create a vector to store the points
   std::vector<Point> points(NUM_POINTS);
 
+  //attempt to randomize the points speed and position
   for (int i = 0; i < NUM_POINTS; i++) {
     points[i].x = static_cast<double>(std::rand()) / RAND_MAX * width;
     points[i].y = static_cast<double>(std::rand()) / RAND_MAX * height;
@@ -43,7 +43,6 @@ int main() {
       }
     }
 
-    // Clear the window
     window.clear();
 
     // Draw the points as circles
@@ -54,7 +53,6 @@ int main() {
       window.draw(circle);
     }
 
-    // Display the contents of the window
     window.display();
   }
 

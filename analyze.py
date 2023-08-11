@@ -1,3 +1,4 @@
+import socket
 def count_phrase(file_path):
     try:
         with open(file_path, "r") as file:
@@ -13,11 +14,11 @@ def count_phrase(file_path):
         print(f"Error: {file_path} not found")
         return {}
 
-
 if __name__ == "__main__":
     file_path = "log.log"
     occurrences = count_phrase(file_path)
-
     for phrase, count in occurrences.items():
-        if(count > 70): 
+        if count > 10: #TODO here the count value is just to filter the output  
             print(f"the phrase {phrase} appears {count} times in the file")
+
+
