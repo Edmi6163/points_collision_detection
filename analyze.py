@@ -1,5 +1,5 @@
-import socket
 def count_phrase(file_path):
+    
     try:
         with open(file_path, "r") as file:
             content = file.read()
@@ -20,5 +20,3 @@ if __name__ == "__main__":
     for phrase, count in occurrences.items():
         if count > 10: #TODO here the count value is just to filter the output  
             print(f"the phrase {phrase} appears {count} times in the file")
-
-

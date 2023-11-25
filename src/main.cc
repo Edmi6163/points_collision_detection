@@ -1,15 +1,17 @@
 #include "Point.hpp"
+#include <cstdlib>
+
+/* window dimension*/
+double width = 800.0;
+double height = 600.0;
 
 int main() {
   // window size setting
-  double width = 800.0;
-  double height = 600.0;
-
 
   // Create a vector to store the points
   std::vector<Point> points(NUM_POINTS);
 
-  //attempt to randomize the points speed and position
+  // attempt to randomize the points speed and position
   for (int i = 0; i < NUM_POINTS; i++) {
     points[i].x = static_cast<double>(std::rand()) / RAND_MAX * width;
     points[i].y = static_cast<double>(std::rand()) / RAND_MAX * height;
@@ -31,7 +33,7 @@ int main() {
         window.close();
     }
 
-    // Move the points and check for collisions
+    // Move the points and check for collisions this is the core of the simulation
     for (int i = 0; i < NUM_POINTS; i++) {
       movePoint(points[i], width, height);
 
